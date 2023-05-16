@@ -278,10 +278,11 @@ font-size: 0.9rem;
 
 #registration .form .btn{
     margin-top: 20px;
+
    
 }
 
-#registration .form a .blue{
+#registration .form a .yellow{
     color: white;
     text-decoration: none;
     background: teal;
@@ -289,9 +290,10 @@ font-size: 0.9rem;
 
 }
 
-#registration .form a .blue{
+#registration .form a .yellow{
     color: rgb(21, 21, 100);
     background: white;
+    
 }
 
 #experts{
