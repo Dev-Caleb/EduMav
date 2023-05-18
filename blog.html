@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contact.css">
+    <title>Blog page</title>
     <link rel="stylesheet" href="css/nav_footer.css">
+    <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Contact</title>
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/e27ec5c147.js" crossorigin="anonymous"></script>
+
+    <!-- Aos animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -21,84 +26,46 @@
                     <i id="close" class="fa-solid fa-xmark"></i>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Blog</a></li>
                     <li><a href="#">Courses</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="#">Join for FREE</a></li>
                 </ul>
                 <i id="menu-button" class="fa-solid fa-bars"></i>
             </div>
         </nav>
     </header>
-    <!--Contact section-->
-
-    <section id="contact-home">
-        <h2>Contact Us/</h2>
-
-    </section>
-
-    <section id="contact">
-
-        <!-- <section id="contact-home">
-            <h2>CONTACT US/</h2>
-        </section>-->
-
-        <div class="getin">
-            <h2>Get in touch</h2>
-            <p>Looking for help? Fill the form and start a new adventure.</p>
-
-            <div class="getin-details">
-                <h3>Headquarters</h3>
-                <div>
-                    <i class="fa-solid fa-house get"></i>
-                    <p>444 Mav Edu Street, Lagos, Nigeria</p>
-                </div>
-                <h3>Phone</h3>
-                <div>
-                    <i class="fa-solid fa-phone get"></i>
-                    <p>(+234) 000 716 988 <br> (+234) 000 716 988</p>
-                </div>
-                <h3>Support</h3>
-                <div>
-                    <i class="fa-solid fa-envelope get"></i>
-                    <p>mavedu@support.com <br> help@educa.com</p>
-                </div>
-                <h3>Follow Us</h3>
-                <div class="pro-links">
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook-f"></i>
-                </div>
+    <main>
+        <section id="blog-home">
+            <h2>Blog/</h2>
+        </section>
+        <section class="blog-container">
+            <div class="post">
+                <img src="css/img/blog1.jpg" alt="">
+                <h3>Var, let and const</h3>
+                <p>
+                    #JAVASCRIPT
+                </p>
+                <a href="#" target="_blank">Read More</a>
             </div>
-        </div>
-
-        <div class="form">
-            <h4>Let's Connect</h4>
-            <p>Fill the form below</p>
-            <div class="form-row">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Email">
+            <div class="post">
+                <img src="css/img/blog2.jpg" alt="">
+                <h3>Javascript cheatsheet</h3>
+                <p>
+                    #JAVASCRIPT
+                </p>
+                <a href="#" target="_blank">Read More</a>
             </div>
-            <div class="form-col">
-                <input type="text" placeholder="Subject">
+            <div class="post">
+                <img src="css/img/blog3.jpg" alt="">
+                <h3>How to Learn</h3>
+                <p>
+                    #LEARNING #PERSONAL DEVELOPMENT
+                </p>
+                <a href="#" target="_blank">Read More</a>
             </div>
-            <div class="form-col">
-                <textarea name="" id="" cols="30" rows="8" placeholder="How can we help?
-                "></textarea>
-            </div>
-            <div class="form-col">
-                <button>Send Message</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.46310649943!2d3.1191414851663883!3d6.548369373296551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1683895287680!5m2!1sen!2sng"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <!--Footer-->
+        </section>
+    </main>
     <footer>
         <div class="footer-col">
             <h3>Top Products</h3>
@@ -148,8 +115,7 @@
         </div>
         <div class="copyright">
             <p>Copyright <i class="far fa-copyright"></i> 2023. All right reserved | This Educational platform was made
-                by
-                Mavericks team</p>
+                by Mavericks team</p>
             <div class="socials">
                 <a href="#"><i class="	fab fa-discord"></i></a>
                 <a href="#"><i class="	fab fa-telegram-plane"></i></a>
@@ -157,6 +123,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- initialize AOS animation package: -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Javascript for responsive navbar -->
     <script src="js/index.js"></script>
 </body>
 
