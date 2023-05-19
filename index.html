@@ -1,46 +1,68 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduMav</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/nav_footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
+
 <body>
-    
-    <nav>
-        <img src="./edu-mav-logo.jpeg"alt="EduMav Logo">
-        <div class="navigation">
-            <ul>
-                <i id="menu-close" class="fa-solid fa-xmark"></i>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Contact</a></li>
-            
-            </ul>
-            <img id="menu-btn" src="./menu.png">
-
-
-        </div>
-    </nav>
-    
-    <section id="home">
-        <h2>We Make Education Accessible To All</h2>
-       
-            <div class="btn">
-                <a class="blue" href="#">Learn More</a>
-                <a class="yellow" href="#">Visit Courses</a>
-
+    <header>
+        <nav>
+            <img src="css/img/EDU-MAV-newlogo.png" class="logo" alt="">
+            <div class="navbar">
+                <ul class="menu">
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Categories
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Art & Design</a>
+                            <a href="#">Business</a>
+                            <a href="#">Data Science</a>
+                            <a href="#">Development</a>
+                            <a href="#">Finance</a>
+                            <a href="#">Science</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn"><i class="fa-solid fa-user"></i>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content-pro">
+                            <a href="profile.html">My Courses</a>
+                            <a href="registrtion.html">Register/login</a>
+                        </div>
+                    </li>
+                </ul>
+                <i id="menu-button" class="fa-solid fa-bars"></i>
             </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>We Make Education Accessible To All</h2>
 
-
-    </section>
-
-              <!-----END OF HOME-->
-
+            <div class="btn">
+                <a class="blue" href="about.html">Learn More</a>
+                <a class="yellow" href="course.html">Visit Courses</a>
+            </div>
+        </section>
+        <!-----END OF HOME-->
         <!--------------FEATURES---------------->
         <section id="features">
             <h1>Awesome Features</h1>
@@ -48,336 +70,314 @@
                 <div class="fea-box">
                     <i class="fa-solid fa-graduation-cap"></i>
                     <h3>Learn and Get Certificate</h3>
-                    <p> Python courses and learn how to code using this incredibly useful language. 
-                        Its simple syntax and readability makes Python perfect for Flask, Django,
-                         data science, and machine learning. You’ll learn how to build </p>
+                    <p> Join the Edu-Mav online schools today and learn to your heart content.
+                        You can learn on here and get your certificate.</p>
 
                 </div>
                 <div class="fea-box">
                     <i class="fa-solid fa-graduation-cap"></i>
                     <h3>Build your Career</h3>
-                    <p> One of the best courses on management and leadership I have come across so far. 
-                        The advice is practical, and examples highly</p>
+                    <p> If you are looking for a place to build your career, you are at the
+                        right place. Become the best you can ever be with our free classes.</p>
 
                 </div>
                 <div class="fea-box">
                     <i class="fa-solid fa-graduation-cap"></i>
                     <h3>Become a Facilitator</h3>
-                    <p> data scientists, with highly relevant and in-demand tech skills that are enabling
-                         consultants to stay ahead of big data trends and raise</p>
+                    <p>Are you tutor? Then Edu-Mav is the place for you. Show forth your knowledge
+                        and train thousands of students around the globe</p>
 
                 </div>
-                </div>
-                
+            </div>m
 
-                </section>
-                
-    <!-----END OF FEATURES----->
 
-                <section id="course">
-                    <h1>Our Courses</h1>
-                    <p>Take a look at our trending courses</p>
-                    <div class="course-box">
-                        <div class="courses">
-                            <img src="./Tech Support.jpg" alt="">
-                            <div class="details">
-                                <span>Updated 02/20/23</span>
-                                <h6>Technical Support</h6>
-                                <div class="star">
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <span>(12)</span> 
-                                </div>
+        </section>
 
+        <!-----END OF FEATURES----->
+
+        <section id="course">
+            <h1>New Courses</h1>
+            <p>Take a look at our latest courses</p>
+
+            <div class="course-box">
+                <a href="course-detail.html">
+                    <div class="courses">
+                        <img src="./css/img/Tech Support.jpg" alt="">
+                        <div class="details">
+                            <span>Updated 02/20/23</span>
+                            <h6>Technical Support</h6>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
                             </div>
-                            <div class="cost">#5,000</div>
-
                         </div>
-
-
-                        <div class="courses">
-                            <img src="./Web Developemnt.jpg" alt="">
-                            <div class="details">
-                                <span>Updated 02/20/23</span>
-                                <h6>Web Developemnt</h6>
-                                <div class="star">
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <span>(12)</span> 
-                                </div>
-
-                            </div>
-                            <div class="cost">#5,000</div>
-
-                        </div>
-
-
-                        <div class="courses">
-                            <img src="./Cyber security.jpg" alt="">
-                            <div class="details">
-                                <span>Updated 02/20/23</span>
-                                <h6>Cyber security</h6>
-                                <div class="star">
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <span>(12)</span> 
-                                </div>
-
-                            </div>
-                            <div class="cost">#5,000</div>
-
-                        </div>
-
-
-                        <div class="courses">
-                            <img src="./Marketing (2).jpg" alt="">
-                            <div class="details">
-                                <span>Updated 02/20/23</span>
-                                <h6>Digital Marketing</h6>
-                                <div class="star">
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <i class="fas fa-star"></i>  
-                                 <span>(12)</span> 
-                                </div>
-
-                            </div>
-                            <div class="cost">#5,000</div>
-
-                        </div>
-
-
-                  
-
                     </div>
-                   
-            </section>
-           
-             <!-------REGISTRATION------>
-<section id="registration">
-    <div class="reminder">
-        <p>Get 100% online Free courses </p>
-        <h1>Register to Get it</h1>
-        <div class="time">
-            <div class="date">
-                20 <br> Days
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="courses">
+                        <img src="./css/img/Web Developemnt.jpg" alt="">
+                        <div class="details">
+                            <span>Updated 02/20/23</span>
+                            <h6>Web development</h6>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="courses">
+                        <img src="./css/img/Cyber security.jpg" alt="">
+                        <div class="details">
+                            <span>Updated 02/20/23</span>
+                            <h6>Cyber Security</h6>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-
-            <div class="date">
-                10 <br> Hours
+        </section>
+        <section id="course">
+            <h1>Popular Courses</h1>
+            <p>Take a look at our trending courses</p>
+            <div class="course-box">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="courses">
+                        <img src="./css/img/Tech Support.jpg" alt="">
+                        <div class="details">
+                            <span>Updated 02/20/23</span>
+                            <h6>Technical Support</h6>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="courses">
+                        <img src="./css/img/Web Developemnt.jpg" alt="">
+                        <div class="details">
+                            <span>Updated 02/20/23</span>
+                            <h6>Web development</h6>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="courses">
+                        <img src="./css/img/Cyber security.jpg" alt="">
+                        <div class="details">
+                            <span>Updated 02/20/23</span>
+                            <h6>Cyber Security</h6>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
+        </section>
 
-            <div class="date">
-                40 <br> Minutes
+        <!-------REGISTRATION------>
+        <!-- <section id="registration">
+            <div class="reminder">
+                <p>Get 100% online Free courses </p>
+                <h1>Register to Get it</h1>
             </div>
+            <div class="form">
+                <h3>Create FREE Account NOW!</h3>
+                <input type="text" placeholder="Name" name="" id="">
+                <input type="email" placeholder="Email Address" name="" id="">
+                <input type="password" placeholder="Password" name="" id="">
+                <div class="btn">
+                    <a class="blue" href="#">Submit</a>
+                </div>
+            </div>
+        </section> -->
+        <!----END OF REGISTRATION-->
+        <section id="experts">
+            <h1>Our Team</h1>
+            <p>Meet our amazing team members</p>
+            <div class="expert-box">
+                <div class="profile">
+                    <img src="./css/img/Profile1.jpg" alt="">
+                    <h6>Mustapha Nurudeen</h6>
+                    <p></p>
+                    <div class="pro-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="./css/img/profile2.jpg" alt="">
+                    <h6>Effiong Divine</h6>
+                    <p></p>
+                    <div class="pro-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="./css/img/profile3.jpg" alt="">
+                    <h6>David Emmanuel</h6>
+                    <p></p>
+                    <div class="pro-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="./css/img/profile 4.jpg" alt="">
+                    <h6>Mary Samuel</h6>
+                    <p></p>
+                    <div class="pro-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="./css/img/profile 5.jpg" alt="">
+                    <h6>Blessing Abhasibhewere</h6>
+                    <p></p>
+                    <div class="pro-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="./css/img/profile 6.jpg" alt="">
+                    <h6>Caleb Olubayo</h6>
+                    <p></p>
+                    <div class="pro-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="./css/img/profile 7.jpg" alt="">
+                    <h6>Nnodim Obinna</h6>
+                    <p></p>
+                    <div class="pro-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="./css/img/profile 8.jpg" alt="">
+                    <h6>Nwokporo Gideon</h6>
+                    <p></p>
+                    <div class="pro-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <div class="date">
-                50 <br> Seconds
+    <!-- Footer -->
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <ul>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Jobs</li>
+                <li>Brand Assets</li>
+                <li>Investor Relations</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <ul>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <ul>
+                <li>Guides</li>
+                <li>Research</li>
+                <li>Experts</li>
+                <li>Marketing Service</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Subscribe for more info</p>
+            <div class="subscribe">
+                <form action="">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <input class="submit" type="submit" value="Subscribe">
+                </form>
             </div>
         </div>
-
-    </div>
-
-    <div class="form">
-        <h3>Create FREE Account NOW!</h3>
-        <input type="text" placeholder="Name" name="" id="">
-        <input type="email" placeholder="Email Address" name="" id="">
-        <input type="text" placeholder="Phone Number" name="" id="">
-
-        <div class="btn">
-            <a class="yellow" href="#">Submit</a>
-            
-
-        </div>
-
-    </div>
-
-
-
-
-</section>
-    <!----END OF REGISTRATION-->
-
-<!-----Profiles of Staff -->
-<section id="experts">
-    <h1>Our Team</h1>
-    <p>Meet our amazing team members</p>
-    <div class="expert-box">
-        <div class="profile">
-            <img src="./Profile1.jpg" alt="">
-            <h6>Mustapha Nurudeen</h6>
-            <p></p>
-            <div pro-links>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-
+        <div class="copyright">
+            <p>Copyright <i class="far fa-copyright"></i> 2023. All right reserved | This Educational platform was made
+                by Mavericks team</p>
+            <div class="socials">
+                <a href="#"><i class="	fab fa-discord"></i></a>
+                <a href="#"><i class="	fab fa-telegram-plane"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-
         </div>
-
-        <div class="profile">
-            <img src="./profile2.jpg" alt="">
-            <h6>Effiong Divine</h6>
-            <p></p>
-            <div pro-links>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-
-            </div>
-
-        </div>
-
-        <div class="profile">
-            <img src="./profile3.jpg" alt="">
-            <h6>David Emmanuel</h6>
-            <p></p>
-            <div pro-links>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-
-            </div>
-
-        </div>
-
-        <div class="profile">
-            <img src="./profile 4.jpg" alt="">
-            <h6>Mary Samuel</h6>
-            <p></p>
-            <div pro-links>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-
-            </div>
-
-        </div>
-
-        <div class="profile">
-            <img src="./profile 5.jpg" alt="">
-            <h6>Blessing Abhasibhewere</h6>
-            <p></p>
-            <div pro-links>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-
-            </div>
-
-        </div>
-
-        <div class="profile">
-            <img src="./profile 6.jpg" alt="">
-            <h6>Caleb Olubayo</h6>
-            <p></p>
-            <div pro-links>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-
-            </div>
-
-        </div>
-
-        <div class="profile">
-            <img src="./profile 7.jpg" alt="">
-            <h6>Nnodim Obinna</h6>
-            <p></p>
-            <div pro-links>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-
-            </div>
-
-        </div>
-
-        <div class="profile">
-            <img src="./profile 8.jpg" alt="">
-            <h6>Nwokporo Gideon</h6>
-            <p></p>
-            <div pro-links>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-</section>
- 
-<!-- Footer -->
-<footer>
-    <div class="footer-col">
-        <h3>Top Products</h3>
-        <li>Jobs</li>
-        <li>Brand Assests</li>
-        <li>Investor Relations</li>
-        <li>Terms of service</li>
-        
-    </div>
-
-    <div class="footer-col">
-        <h3>Quick Lines</h3>
-        <li>Jobs</li>
-        <li>Brand Assests</li>
-        <li>Investor Relations</li>
-        <li>Terms of service</li>
-    </div>
-
-    <div class="footer-col">
-        <h3>Features</h3>
-        <li>Jobs</li>
-        <li>Brand Assests</li>
-        <li>Investor Relations</li>
-        <li>Terms of Services</li>
-    </div>
-
-    <div class="footer-col">
-        <h3>Resources</h3>
-        <li>Jobs</li>
-        <li>Brand Assests</li>
-        <li>Investor Relations</li>
-        <li>Terms of service</li>
-    </div>
-    <div class="footer-col">
-       <h3>NewsLetter</h3>
-       <p> You can trust us, we only send promo Offers</p>
-       <div class="subscribe">
-        <input type="text" placeholder="Your Email">
-        <a href="#" class="Blue">SUBSCRIBE</a>
-       </div>
-    </div>
-
-    <div class="copyright">
-        <p>copyright &copy;2023 All right reserved | This educational platform is made by Mavericks Team</p>
-        <div class="pro-links">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-        </div>
-    </div>
-</footer>
-
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/index.js"></script>
 
 
 </body>
+
 </html>
