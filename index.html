@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/nav_footer.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -19,12 +21,33 @@
             <div class="navbar">
                 <ul class="menu">
                     <i id="close" class="fa-solid fa-xmark"></i>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Categories
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Art & Design</a>
+                            <a href="#">Business</a>
+                            <a href="#">Data Science</a>
+                            <a href="#">Development</a>
+                            <a href="#">Finance</a>
+                            <a href="#">Science</a>
+                        </div>
+                    </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#">Courses</a></li>
+                    <li><a href="course.html">Courses</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#registration">Join for FREE</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn"><i class="fa-solid fa-user"></i>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content-pro">
+                            <a href="profile.html">My Courses</a>
+                            <a href="registrtion.html">Register/login</a>
+                        </div>
+                    </li>
                 </ul>
                 <i id="menu-button" class="fa-solid fa-bars"></i>
             </div>
@@ -35,8 +58,8 @@
             <h2>We Make Education Accessible To All</h2>
 
             <div class="btn">
-                <a class="blue" href="#">Learn More</a>
-                <a class="yellow" href="#">Visit Courses</a>
+                <a class="blue" href="about.html">Learn More</a>
+                <a class="yellow" href="course.html">Visit Courses</a>
             </div>
         </section>
         <!-----END OF HOME-->
@@ -73,7 +96,65 @@
         <!-----END OF FEATURES----->
 
         <section id="course">
-            <h1>Our Courses</h1>
+            <h1>New Courses</h1>
+            <p>Take a look at our latest courses</p>
+
+            <div class="course-box">
+                <a href="course-detail.html">
+                    <div class="courses">
+                        <img src="./css/img/Tech Support.jpg" alt="">
+                        <div class="details">
+                            <span>Updated 02/20/23</span>
+                            <h6>Technical Support</h6>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="courses">
+                        <img src="./css/img/Web Developemnt.jpg" alt="">
+                        <div class="details">
+                            <span>Updated 02/20/23</span>
+                            <h6>Web development</h6>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="courses">
+                        <img src="./css/img/Cyber security.jpg" alt="">
+                        <div class="details">
+                            <span>Updated 02/20/23</span>
+                            <h6>Cyber Security</h6>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="course">
+            <h1>Popular Courses</h1>
             <p>Take a look at our trending courses</p>
             <div class="course-box">
                 <a href="#" target="_blank" rel="noopener noreferrer">
@@ -131,37 +212,21 @@
         </section>
 
         <!-------REGISTRATION------>
-        <section id="registration">
+        <!-- <section id="registration">
             <div class="reminder">
                 <p>Get 100% online Free courses </p>
                 <h1>Register to Get it</h1>
-                <div class="time">
-                    <div class="date">
-                        20 <br> Days
-                    </div>
-
-                    <div class="date">
-                        10 <br> Hours
-                    </div>
-
-                    <div class="date">
-                        40 <br> Minutes
-                    </div>
-                    <div class="date">
-                        50 <br> Seconds
-                    </div>
-                </div>
             </div>
             <div class="form">
                 <h3>Create FREE Account NOW!</h3>
                 <input type="text" placeholder="Name" name="" id="">
                 <input type="email" placeholder="Email Address" name="" id="">
-                <input type="text" placeholder="Phone Number" name="" id="">
+                <input type="password" placeholder="Password" name="" id="">
                 <div class="btn">
                     <a class="blue" href="#">Submit</a>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!----END OF REGISTRATION-->
         <section id="experts">
             <h1>Our Team</h1>
@@ -309,7 +374,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/index.js"></script>
+
+
 </body>
 
 </html>

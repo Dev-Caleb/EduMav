@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/nav_footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <nav style="position: static;">
+            <img src="css/img/EDU-MAV-newlogo.png" class="logo" alt="">
+            <div class="navbar">
+                <ul class="menu">
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Categories
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Art & Design</a>
+                            <a href="#">Business</a>
+                            <a href="#">Data Science</a>
+                            <a href="#">Development</a>
+                            <a href="#">Finance</a>
+                            <a href="#">Science</a>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn"><i class="fa-solid fa-user"></i>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content-pro">
+                            <a href="profile.html">My Courses</a>
+                            <a href="#">Register/login</a>
+                        </div>
+                    </li>
+                </ul>
+                <i id="menu-button" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <h1>My Courses</h1>
+        <div class="tabs">
+        <button class="tablink" onclick="openPage('Home', this, 'white')" id="defaultOpen">Currently Learning</button>
+        <button class="tablink" onclick="openPage('News', this, 'white')" >Completed</button>
+        </div>
+        <hr>
+        
+        <div id="Home" class="tabcontent">
+            <div class="col">
+                <div class="col-info">
+                    <div class="col-info-text">
+                    <h1>Web Development</h1>
+                    <p class="tag">
+                        course
+                    </p>
+                </div>
+                    <ul class="col-info-links">
+                        <li><a href="#" class="white">Overview</a></li>
+                        <li><a href="#" class="blue">Continue</a></li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <div class="skill-bar">
+                        <div class="skill-per" style="max-width: 30%;"></div>
+                    </div>
+                    <p>30% Complete</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-info">
+                    <div class="col-info-text">
+                    <h1>Digital Marketing</h1>
+                    <p class="tag">
+                        course
+                    </p>
+                </div>
+                    <ul class="col-info-links">
+                        <li><a href="#" class="white">Overview</a></li>
+                        <li><a href="#" class="blue">Continue</a></li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <div class="skill-bar">
+                        <div class="skill-per" style="max-width: 60%;"></div>
+                    </div>
+                    <p>60% Complete</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-info">
+                    <div class="col-info-text">
+                    <h1>Cyber Security</h1>
+                    <p class="tag">
+                        course
+                    </p>
+                </div>
+                    <ul class="col-info-links">
+                        <li><a href="#" class="white">Overview</a></li>
+                        <li><a href="#" class="blue">Continue</a></li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <div class="skill-bar">
+                        <div class="skill-per" style="max-width: 50%;"></div>
+                    </div>
+                    <p>50% Complete</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="News" class="tabcontent">
+            <div class="col">
+                <div class="col-info">
+                    <div class="col-info-text">
+                        <h1>Intro to python programming</h1>
+                        <p class="tag">
+                            course
+                        </p>
+                    </div>
+                    <ul class="col-info-links">
+                        <li><a href="#" class="white">Overview</a></li>
+                        <li><a href="#" class="blue">Continue</a></li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <div class="skill-bar">
+                        <div class="skill-per" style="max-width: 100%;"></div>
+                    </div>
+                    <p>Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
