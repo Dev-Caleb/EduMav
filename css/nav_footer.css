@@ -38,7 +38,6 @@ nav .logo {
 }
 
 .navbar ul li a {
-    padding: 14px 16px;
     color: black;
     transition: 0.1s ease;
 }
@@ -47,6 +46,7 @@ nav .logo {
     border-bottom: 2px solid rgb(32, 21, 255);
 }
 .dropdown {
+    
     overflow: hidden;
 }
 
@@ -221,6 +221,7 @@ footer .copyright {
 
 @media (max-width:769px) {
     nav {
+        text-align: start;
         z-index: 1;
         padding: 15px 20px;
     }
@@ -279,9 +280,6 @@ footer .copyright {
 }
 
 @media screen and (max-width: 600px) {
-    .dropdown {
-        float: none;
-    }
 
     .dropdown-content {
         position: relative;
