@@ -189,11 +189,25 @@
     text-align: center;
 }
 
-#course-inner .enroll .enroll-btn a{
+#course-inner .enroll .enroll-btn a {
     font-size: .9rem;
     padding: 13px 45px;
     border-radius: 5px;
     font-weight: 600;
     color: #fff;
     background-color: #323288;
+}
+
+@media (max-width: 769px) {
+    #course-inner {
+        flex-direction: column;
+    }
+
+    #course-inner .overview {
+        width: 100%;
+    }
+
+    #course-inner .enroll {
+        width: 100%;
+    }
 }
